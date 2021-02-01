@@ -7,14 +7,36 @@
 //
 
 import UIKit
+import Alamofire
 
 class ViewController: UIViewController {
-
+    
+    var foodManager = FoodManager()
+    var delegate: FoodDelegate?
+    
+    var listResult: FoodModel? {
+        didSet {
+            DispatchQueue.main.async {
+                print(self.listResult?.results)
+            }
+        }
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        loadAPI()
     }
-
-
+    
+    func loadAPI(){
+        foodManager.searchReceipe() {[weak self] result in
+            switch result {
+            case .failure(let err):
+                print("Error : \(err)")
+            case .success(let dataSuccess):
+                self?.listResult = dataSuccess
+            }
+        }
+    }
+    
 }
 
