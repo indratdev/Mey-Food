@@ -20,6 +20,7 @@
 		8FEC73AC25C852ED00F00C31 /* ReceipeTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8FEC73AA25C852ED00F00C31 /* ReceipeTableViewCell.xib */; };
 		8FFB080F25C932B50030F04F /* Others.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FFB080E25C932B50030F04F /* Others.swift */; };
 		8FFB081225C9381E0030F04F /* ReceipeCategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FFB081125C9381E0030F04F /* ReceipeCategory.swift */; };
+		8FFB081425C93CD40030F04F /* ReceipeDetailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FFB081325C93CD40030F04F /* ReceipeDetailVC.swift */; };
 		F453D9755A146926F5846622 /* Pods_Mey_Food.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D35FDACE234D7AADACF86E1F /* Pods_Mey_Food.framework */; };
 /* End PBXBuildFile section */
 
@@ -40,6 +41,7 @@
 		8FEC73AA25C852ED00F00C31 /* ReceipeTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ReceipeTableViewCell.xib; sourceTree = "<group>"; };
 		8FFB080E25C932B50030F04F /* Others.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Others.swift; sourceTree = "<group>"; };
 		8FFB081125C9381E0030F04F /* ReceipeCategory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReceipeCategory.swift; sourceTree = "<group>"; };
+		8FFB081325C93CD40030F04F /* ReceipeDetailVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReceipeDetailVC.swift; sourceTree = "<group>"; };
 		C06F7832C72F26E6ACCD3AC8 /* Pods-Mey Food.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Mey Food.release.xcconfig"; path = "Target Support Files/Pods-Mey Food/Pods-Mey Food.release.xcconfig"; sourceTree = "<group>"; };
 		D35FDACE234D7AADACF86E1F /* Pods_Mey_Food.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Mey_Food.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -113,6 +115,7 @@
 			isa = PBXGroup;
 			children = (
 				8FEC739025C8302B00F00C31 /* ViewController.swift */,
+				8FFB081325C93CD40030F04F /* ReceipeDetailVC.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -265,6 +268,7 @@
 				8FEC73AB25C852ED00F00C31 /* ReceipeTableViewCell.swift in Sources */,
 				8FEC738D25C8302B00F00C31 /* AppDelegate.swift in Sources */,
 				8FFB080F25C932B50030F04F /* Others.swift in Sources */,
+				8FFB081425C93CD40030F04F /* ReceipeDetailVC.swift in Sources */,
 				8FFB081225C9381E0030F04F /* ReceipeCategory.swift in Sources */,
 				8FEC738F25C8302B00F00C31 /* SceneDelegate.swift in Sources */,
 				8FEC73A525C84ACA00F00C31 /* FoodDelegate.swift in Sources */,

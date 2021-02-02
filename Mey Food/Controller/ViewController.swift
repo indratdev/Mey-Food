@@ -16,6 +16,7 @@ class ViewController: UIViewController {
     var foodManager = FoodManager()
     var delegate: FoodDelegate?
     var dataReceipe: FoodModel?
+    var id: Int?
     
     var searchDisplay: String? {
         get {
@@ -64,6 +65,16 @@ extension ViewController: FoodDelegate {
 //    }
 //}
 
+extension ViewController {
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "receipeDetailSegue" {
+            let vc = segue.destination as? ReceipeDetailVC
+            vc?.idReceipe = self.id
+        }
+    }
+}
+
+// MARK: TableView
 extension ViewController: UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return dataReceipe?.results.count ?? 0
@@ -85,6 +96,10 @@ extension ViewController: UITableViewDelegate, UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         let data = dataReceipe?.results[indexPath.row]
-        print(data?.id)
+        guard let idReceipe = data?.id else {return}
+        self.id = idReceipe
+//        print(data?.id)
+        
+        performSegue(withIdentifier: "receipeDetailSegue", sender: nil)
     }
 }

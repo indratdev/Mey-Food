@@ -90,11 +90,40 @@
                     <connections>
                         <outlet property="receipeSearch" destination="RDM-3G-FEt" id="pZ7-cS-Kx0"/>
                         <outlet property="receipeTableView" destination="898-fs-kZu" id="hUn-Mj-DdW"/>
+                        <segue destination="mTQ-dF-eDY" kind="show" identifier="receipeDetailSegue" id="02v-GR-J77"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1047.8260869565217" y="75.669642857142847"/>
+        </scene>
+        <!--Receipe DetailVC-->
+        <scene sceneID="mFm-aC-qXr">
+            <objects>
+                <viewController id="mTQ-dF-eDY" customClass="ReceipeDetailVC" customModule="Mey_Food" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="OPW-EQ-VkQ">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="loT-26-rKN">
+                                <rect key="frame" x="0.0" y="88" width="414" height="774"/>
+                                <color key="backgroundColor" systemColor="systemTealColor" red="0.35294117650000001" green="0.7843137255" blue="0.98039215690000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="loT-26-rKN" firstAttribute="top" secondItem="iRH-KS-IyQ" secondAttribute="top" id="4qH-NN-DBo"/>
+                            <constraint firstItem="loT-26-rKN" firstAttribute="leading" secondItem="iRH-KS-IyQ" secondAttribute="leading" id="EFf-Es-opd"/>
+                            <constraint firstItem="iRH-KS-IyQ" firstAttribute="trailing" secondItem="loT-26-rKN" secondAttribute="trailing" id="jLW-pY-7xz"/>
+                            <constraint firstItem="iRH-KS-IyQ" firstAttribute="bottom" secondItem="loT-26-rKN" secondAttribute="bottom" id="nrq-ct-Uy7"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="iRH-KS-IyQ"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="1Kf-m8-f1c"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="z4I-nT-HNi" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2010" y="76"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="t4d-ww-Evh">
